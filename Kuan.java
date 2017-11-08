@@ -15,7 +15,7 @@ public class Kuan {
 		Arrays.sort(array);
 		int min = array[0];
 		int max = array[array.length - 1];
-		return max-min;
+		return max;
 	}
 
 	public  double getCollomia() {
