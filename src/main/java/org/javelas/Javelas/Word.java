@@ -77,7 +77,7 @@ public class Word {
 		specialCharacters();
 	}
 	
-	public void createPunMapStart() {
+	public static void createPunMapStart() {
 		ArrayList<String> start =new ArrayList<String>();
 		start.add("\"");
 		start.add("'");
@@ -94,10 +94,12 @@ public class Word {
 		start.add("£");
 		start.add("¥");
 		start.add("€");
+		punMap.put("start", start);	
+
 		
 	}
 	
-	public void createPunMapEnd() {
+	public static void createPunMapEnd() {
 		ArrayList<String> end =new ArrayList<String>();
 		end.add("�");
 		end.add("!");
