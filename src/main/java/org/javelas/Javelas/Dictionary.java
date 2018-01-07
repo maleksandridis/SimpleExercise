@@ -71,7 +71,7 @@ public class Dictionary {
 		if (this.getDicName().equals("custom")) {
 			try {				
 				BufferedWriter wtr = 
-						new BufferedWriter(new OutputStreamWriter(new FileOutputStream("dictionaries\\custom.txt", true), "UTF8"));
+						new BufferedWriter(new OutputStreamWriter(new FileOutputStream("resources\\dictionaries\\custom.txt", true), "UTF8"));
 				wtr.write(word.getWordStr());
 				wtr.newLine();
 				wtr.close();
