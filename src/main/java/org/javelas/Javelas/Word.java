@@ -15,48 +15,8 @@ public class Word {
 	}
 	
 	public static void createPunMap() {
-		
-		ArrayList<String> start = new ArrayList<String>();
-		ArrayList<String> end = new ArrayList<String>();
-		
-		start.add("\"");
-		start.add("'");
-		start.add("(");
-		start.add("#");
-		start.add("$");
-		start.add("[");
-		start.add("{");
-		start.add("@");
-		start.add("-");
-		start.add("<");
-		start.add("~");
-		start.add("�");
-		start.add("�");
-		start.add("�");
-		start.add("�");
-		
-		end.add("�");
-		end.add("!");
-		end.add("$");
-		end.add("%");
-		end.add("'");
-		end.add("\"");
-		end.add(",");
-		end.add(".");
-		end.add(")");
-		end.add("]");
-		end.add("}");
-		end.add(">");
-		end.add(":");
-		end.add(";");
-		end.add("?");
-		end.add("�");
-		end.add("�");
-		end.add("�");
-		end.add("�");
-		
-		punMap.put("start", start);
-		punMap.put("end", end);
+		createPunMapStart();
+		createPunMapEnd();
 	}
 	
 	public void specialCharacters() {		
@@ -117,4 +77,46 @@ public class Word {
 		specialCharacters();
 	}
 	
+	public void createPunMapStart() {
+		ArrayList<String> start =new ArrayList<String>();
+		start.add("\"");
+		start.add("'");
+		start.add("(");
+		start.add("#");
+		start.add("$");
+		start.add("[");
+		start.add("{");
+		start.add("@");
+		start.add("-");
+		start.add("<");
+		start.add("~");
+		start.add("�");
+		start.add("�");
+		start.add("�");
+		start.add("�");
+	}
+	
+	public void createPunMapEnd() {
+		ArrayList<String> end =new ArrayList<String>();
+		end.add("�");
+		end.add("!");
+		end.add("$");
+		end.add("%");
+		end.add("'");
+		end.add("\"");
+		end.add(",");
+		end.add(".");
+		end.add(")");
+		end.add("]");
+		end.add("}");
+		end.add(">");
+		end.add(":");
+		end.add(";");
+		end.add("?");
+		end.add("�");
+		end.add("�");
+		end.add("�");
+		end.add("�");
+		punMap.put("end", end);	
+	}
 }
