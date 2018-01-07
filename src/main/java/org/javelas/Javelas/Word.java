@@ -90,10 +90,11 @@ public class Word {
 		start.add("-");
 		start.add("<");
 		start.add("~");
-		start.add("�");
-		start.add("�");
-		start.add("�");
-		start.add("�");
+		start.add("«");
+		start.add("£");
+		start.add("¥");
+		start.add("€");
+		
 	}
 	
 	public void createPunMapEnd() {
@@ -113,10 +114,10 @@ public class Word {
 		end.add(":");
 		end.add(";");
 		end.add("?");
-		end.add("�");
-		end.add("�");
-		end.add("�");
-		end.add("�");
+		end.add("»");
+		end.add("€");
+		end.add("£");
+		end.add("¥");
 		punMap.put("end", end);	
 	}
 }
