@@ -81,9 +81,7 @@ public class Word {
 		ArrayList<String> start =new ArrayList<String>();
 		start.add("\"");start.add("'");start.add("(");
 		start.add("(");start.add("#");start.add("$");
-		start.add("[");
-		start.add("{");
-		start.add("@");
+		start.add("[");start.add("{");start.add("@");
 		start.add("-");
 		start.add("<");
 		start.add("~");
@@ -105,11 +103,8 @@ public class Word {
 		end.add("'");
 		end.add("\"");
 		end.add(",");
-		end.add(".");
-		end.add(")");
-		end.add("]");
-		end.add("}");
-		end.add(":");end.add(">");
+		end.add("]");end.add(")");end.add(".");
+		end.add(":");end.add(">");end.add("}");
 		end.add("?");end.add("»");end.add(";");
 		end.add("£");end.add("¥");end.add("€");
 		punMap.put("end", end);	
