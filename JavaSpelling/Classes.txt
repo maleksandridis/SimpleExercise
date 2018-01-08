@@ -1,0 +1,29 @@
+﻿
+Dictionary [LinkedHashMap<Integer, ArrayList<String>> dic, String lang, int range]
+	static ArrayList<Dictionary> dictionaries
+
+	private void setDic()
+	public void addWord(String word)
+	public boolean wordExists(String word)
+78 lines
+
+Suggestions [String word, ArrayList<String> suggestedWords]
+	public void getSuggestions()
+	public void firstSuggestions()
+	public void secondSuggestions()
+	public int getLevenshteinDistance(String word2)
+75 lines
+
+WordEdit (in progress)
+	private static HashMap<String, ArrayList<String>> punMap
+
+	public int jHashCode(String word)
+	public void createPunMap()
+	public String specialCharacters(String word)
+68 lines
+
+SpellingTest (main Class)
+	public static void main(String[] args)
+	public static void checkSpellingTest(String text)
+	public static void menu()
+45 lines
