@@ -5,7 +5,6 @@
  */
 package org.javelas.Javelas;
 
-//import BunifuDrag.BunifuDrag;
 import java.awt.MouseInfo;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +14,6 @@ import java.time.LocalDateTime;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-//import javafx.util.converter.LocalDateTimeStringConverter;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import  javax.swing.JFrame;
@@ -36,8 +34,6 @@ public class Home4 extends JFrame {
             
             public void actionPerformed(ActionEvent ae) {
              LocalDateTime now = LocalDateTime.now();
-//        jLabel6.setText(String.valueOf(now.getSecond()));
-//        jLabel15.setText(String.valueOf(now.getMinute()));
         jLabel14.setText(String.valueOf(now.getHour()));  
         
             }
